@@ -6,11 +6,12 @@
  */
 int main(void)
 {
-	int a, b;
+	int c;
 
-	for (a = 0, b = 0; a < 26, b < 26; a++, b++)
-		putchar('a' + a);
-		putchar('A' + b);
+	for (c = 0; c < 26; c++)
+		putchar('a' + c);
+	for (c =0; c < 26; c++)
+		putchar('A' + c);
 	putchar('\n');
 	return (0);
 }
