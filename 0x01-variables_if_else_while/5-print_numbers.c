@@ -1,15 +1,17 @@
 #include <stdio.h>
 /**
- * main -Entry point
+ * main - Entry point
  *
- * Result: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c;
+	int n;
 
-	for (c = '0'; c <= '9'; c++)
-		putchar(c);
-	putchar('\n');
+	for (n = 0; n <= 9; n++)
+		printf(n);
+
+	printf("\n");
+
 	return (0);
 }
