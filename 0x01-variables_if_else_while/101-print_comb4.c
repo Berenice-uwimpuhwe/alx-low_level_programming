@@ -2,12 +2,10 @@
 /**
  * main - Entry point
  * Description: Printing possible combinations of three digits
- * Result: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a, b, c;
-
 	for (a = 0; a < 8; a++)
 	{
 		for (b = a + 1; b < 9; b++)
