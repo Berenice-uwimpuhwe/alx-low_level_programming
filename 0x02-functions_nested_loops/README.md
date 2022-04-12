@@ -15,3 +15,4 @@ Task 12. n times table
 Task 13. Nature made the natural numbers; All else is the work of women
 Task 14
 Task 15. Even Liber Abbaci
+Task 16. First 98 Fibonacci numbers
