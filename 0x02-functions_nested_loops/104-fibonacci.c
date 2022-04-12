@@ -9,12 +9,7 @@ int main(void)
 	int i;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	printf("%lu", fib1);
-	printf(", ");
-	printf("%lu", fib2);
-	printf(", ");
-
-	for (i = 2; i < 98; i++)
+	for (i = 0; i < 98; i++)
 	{
 		sum = fib1 + fib2;
 		printf("%lu", sum);
