@@ -6,3 +6,4 @@ Task 3. islower
 Task 4. isalpha
 Task 5. Sign
 Task 6. Absolute value
+Task 7. Last digit
