@@ -8,3 +8,4 @@ Task 5. Sign
 Task 6. Absolute value
 Task 7. Last digit
 Task 8. Minutes of the day
+Task 9. Learn your times table
