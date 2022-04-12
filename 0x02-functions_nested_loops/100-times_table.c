@@ -3,6 +3,8 @@
  * print_times_table - prints n times table starting with 0.
  * @n: takes an integer
  */
+void print_times_table(int n);
+
 void print_times_table(int n)
 {
 	int i, j, k;
@@ -39,5 +41,4 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-	return (0);
 }
