@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: prints sum of even valued terms of Fibonacci sequence not above 4 million
+ * Description: prints sum of even Fibonacci terms not above 4m
  * Return: Always 0
  */
 int main(void)
