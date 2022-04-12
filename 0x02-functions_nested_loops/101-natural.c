@@ -13,10 +13,9 @@ int main(void)
 		j = i % 3;
 		k = i % 5;
 		if (j == 0 || k == 0)
-		{
 			sum += i;
-			printf("%d\n", sum);
-		}
 	}
+	printf("%d\n", sum);
+
 	return (0);
 }
