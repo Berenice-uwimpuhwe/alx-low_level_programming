@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	int i;
+	int i = 0;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
 	unsigned long half1, half2;
 
-	for (i = 0; i < 98; i++)
+	for (i = 0; i < 92; i++)
 	{
 		sum = fib1 + fib2;
 		printf("%lu", sum);
