@@ -15,10 +15,10 @@ int main(void)
 
 	for (i = 3; i <= n; i += 2)
 	{
-		while (n % 1 == 0)
+		while (n % i == 0)
 		{
 			max = n;
-			n = n / 1;
+			n = n / i;
 		}
 	}
 	printf("%lu\n", max);
