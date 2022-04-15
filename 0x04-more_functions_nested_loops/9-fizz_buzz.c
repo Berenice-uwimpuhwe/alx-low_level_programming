@@ -25,12 +25,12 @@ int main(void)
 		}
 		else
 		{
-			printf("%d",i);
+			printf("%d", i);
 		}
 		if (i != 100)
-			printf(" ");
+			putchar(' ');
 		else
-			printf("\n");
+			putchar('\n');
 	}
 	return (0);
 }
