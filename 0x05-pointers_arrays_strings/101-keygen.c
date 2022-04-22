@@ -11,28 +11,25 @@
 
 int main(void)
 {
-	int ascii = 2772, i = 0, j, random;
-	char pswd[100];
-	time_t t;
+	int i, sum, n;
+	int pswd[100];
+	
+	sum = 0;
 
-	srand((int) time(&t));
-	while (ascii > 126)
+	srand(time(NULL));
+	for (i = 0; i < 100; i++)
 	{
-		random = rand() % 126;
-		pswd[i] = random;
-		ascii -= random;
-		i++;
-	}
-	if (ascii > 0)
-		pswd[i] = ascii;
-	else
-	{
-		i--;
+		pswd[i] = rand() % 78;
+		sum += (pswd[i] + '0');
+		putchar(pswd[i] + '0');
+		if ((2272 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
 	}
 
-	for (j = 0; j <= i; j++)
-	{
-		printf("%c", pswd[j]);
-	}
 	return (0);
 }
