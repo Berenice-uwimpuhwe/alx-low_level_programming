@@ -8,7 +8,7 @@
 
 char *leet(char *s)
 {
-	int i = 0; j = 0;
+	int i = 0, j = 0;
 	char array_leet[] = {'4', '3', '1', '0', '7'};
 	char array_up[] = {'A', 'E', 'L', 'O', 'T'};
 	char array_low[] = {'a', 'e', 'l', 'o', 't'};
