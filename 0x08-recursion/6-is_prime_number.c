@@ -4,6 +4,7 @@
  * other_prime - allows to evaluate from 1 to n
  * @a: same as n
  * @b: iterates from 1 to n
+ * Return: 1 if success
  */
 
 int other_prime(int a, int b)
