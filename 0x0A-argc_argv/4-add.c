@@ -17,7 +17,7 @@ int is_number(char *s)
 		i++;
 	for (; *(s + i) != 0; ++i)
 	{
-		a = isxdigit(*(s + i));
+		a = isdigit(*(s + i));
 		if (a == 0)
 		{
 			check = 0;
