@@ -10,7 +10,7 @@
 
 int wordcount(char sw)
 {
-	int l, wc;
+	int *l, *wc;
 
 	l = 0, wc = 0;
 	if (*(sw + l) == ' ')
