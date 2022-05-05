@@ -34,22 +34,22 @@ int is_number(char *s)
  */
 int main(int argc, char **argv)
 {
-	int i, n , a;
+	int i, n , ar;
 
-	a = 0 , n = 0;
+	ar = 0 , n = 0;
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (is_number()argv[i])
+			if (is_number(argv[i]))
 				n += atoi(argv[i]);
 			else
-				a = 1;
+				ar = 1;
 		}
 	}
-	if (a == 0)
+	if (ar == 0)
 		printf("%i\n", n);
 	else
 		printf("%s\n", "Error");
-	return (a);
+	return (ar);
 }
