@@ -17,7 +17,7 @@ int is_number(char *s)
 		i++;
 	for (; *(s + i) != 0; ++i)
 	{
-		a = is_digit(*(s + i));
+		a = isdigit(*(s + i));
 		if (a == 0)
 		{
 			check = 0;
@@ -31,7 +31,7 @@ int is_number(char *s)
  * @argc: counts paramteters entering to main
  * @argv: pointer of array of pointer containg strings entering main
  * Return : Always 0 (Success)
- *//
+ */
 int main(int argc, char **argv)
 {
 	int i, n , a;
