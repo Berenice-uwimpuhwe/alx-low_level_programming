@@ -4,13 +4,13 @@
 
 /**
  * wordcount - counts number of words
- * @s: string
+ * @sw: string
  * Return: int
  */
 
 int wordcount(char *sw)
 {
-	int *l, *wc;
+	int l, wc;
 
 	l = 0, wc = 0;
 	if (*(sw + l) == ' ')
@@ -19,9 +19,11 @@ int wordcount(char *sw)
 	{
 		if (*(sw + l) == ' ' && *(sw + l - 1) != ' ')
 			wc++;
+		if (*(sw + l) != ' ' && *(sw + l + 1) == 0)
+			wc++;
 		l++;
 	}
-	return (*wc);
+	return (wc);
 }
 /**
  * trailingsp - moves address to remove traling whitespaces
@@ -49,7 +51,7 @@ char **strtow(char *str)
 	if (str == NULL || *str == 0)
 		return (0);
 	ar = 0;
-	wc = wordcount(*str);
+	wc = wordcount(str);
 	if (wc == 0)
 		return (0);
 	s = malloc((wc + 1) * sizeof(char *));
@@ -61,7 +63,7 @@ char **strtow(char *str)
 		l = 0;
 		while (*(ts + l) != ' ' && *(ts + l) != 0)
 			l++;
-		s[i] == malloc((l + 1) * sizeof(char));
+		s[i] = malloc((l + 1) * sizeof(char));
 		if (s[i] == 0)
 		{
 			ar = 1;
