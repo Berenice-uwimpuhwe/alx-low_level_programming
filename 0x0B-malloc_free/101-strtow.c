@@ -56,7 +56,7 @@ char **strtow(char *str)
 		return (0);
 	s = malloc((wc + 1) * sizeof(char *));
 	if (s == 0)
-		return 0;
+		return (0);
 	ts = trailingsp(str);
 	for (i = 0; i < wc; i++)
 	{
