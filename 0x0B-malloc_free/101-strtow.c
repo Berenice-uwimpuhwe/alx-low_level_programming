@@ -8,7 +8,7 @@
  * Return: int
  */
 
-int wordcount(char sw)
+int wordcount(char *sw)
 {
 	int *l, *wc;
 
@@ -21,7 +21,7 @@ int wordcount(char sw)
 			wc++;
 		l++;
 	}
-	return (wc);
+	return (*wc);
 }
 /**
  * trailingsp - moves address to remove traling whitespaces
@@ -49,7 +49,7 @@ char **strtow(char *str)
 	if (str == NULL || *str == 0)
 		return (0);
 	ar = 0;
-	wc = wordcount(str);
+	wc = wordcount(*str);
 	if (wc == 0)
 		return (0);
 	s = malloc((wc + 1) * sizeof(char *));
