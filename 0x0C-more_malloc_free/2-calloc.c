@@ -3,14 +3,14 @@
 #include <stdlib.h>
 
 /**
- * memset - initializes n bytes of memory to a
+ * _memset - initializes n bytes of memory to a
  * @ptr: initial address
  * @a: variable to initialize with
  * @n: number of bytes to initialize
  * Return: pointer char
  */
 
-char *memset(char *ptr, int a, unsigned int n)
+char *_memset(char *ptr, int a, unsigned int n)
 {
 	unsigned int i;
 
@@ -35,6 +35,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	v = malloc(nmemb * size);
 	if (v == 0)
 		return (0);
-	memset(v, 0, size * nmemb);
+	_memset(v, 0, size * nmemb);
 	return (v);
 }
