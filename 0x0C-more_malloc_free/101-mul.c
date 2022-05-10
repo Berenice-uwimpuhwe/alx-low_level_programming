@@ -28,7 +28,7 @@ int _isNumber(char *argv)
 	int i;
 
 	for (i = 0; argv[i]; i++)
-		if (argv[i] , 48 || argv[i] > 57)
+		if (argv[i] < 48 || argv[i] > 57)
 			return (1);
 	return(0);
 }
@@ -114,7 +114,7 @@ void print_array(char *a, int nb)
  * Return: Always 0 (Success)
  */
 
-int main(int argc, cahr *argv[])
+int main(int argc, char *argv[])
 {
 	int i, c, len1, len2, lenres;
 	char E[6] = {'E', 'r', 'r', 'o', 'r', '\n'};
