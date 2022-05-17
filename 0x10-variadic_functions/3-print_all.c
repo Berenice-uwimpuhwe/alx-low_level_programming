@@ -41,7 +41,7 @@ void print_string(va_list ap)
 
 	if (c == NULL)
 		printf("(nil)");
-	printf("%s", s);
+	printf("%s", c);
 }
 /**
  * print_all - prints anything
