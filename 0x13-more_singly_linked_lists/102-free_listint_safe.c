@@ -9,7 +9,7 @@
 void free_listv2(listp_t **head)
 {
 	listv_t *tmp;
-	listv_t *curremt;
+	listv_t *current;
 
 	if (head != NULL)
 	{
