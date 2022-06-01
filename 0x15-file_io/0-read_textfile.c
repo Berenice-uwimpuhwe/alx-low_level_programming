@@ -10,26 +10,24 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t counterr, counterw, file;
+	int file;
+	ssize_t cread, cwrite;
 	char *buf;
 
-	if (filename == NULL)
+	if (!filename)
 		return (0);
 	file = open(filename, O_RDONLY);
 	if (file == -1)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
-	if (buf == NULL)
-	{
+	if (!buf)
 		return (0);
-	}
-	counterr = read(file, buf, letters);
-	if (counterr == -1)
-		return (0);
-	counterw = write(STDOUT_FILENO, buf, counterr);
-	if (counterw == -1)
-		return (0);
+	cread = read(file, buf, letters);
+	cwrite = write(STDOUT_FILENO, buf, cread);
+
 	close(file);
+
 	free(buf);
-	return (counterw);
+
+	return (cwrite);
 }
